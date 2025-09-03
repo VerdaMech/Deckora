@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <h1>Deckora</h1>
+    <div class="contenedor-inputs">
+        <h3>Contáctanos</h3>   
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" name="nombre" placeholder="Escribe tu nombre">
+        <label for="correo">Correo</label>
+        <input id="correo" type="text" name="correo" placeholder="Escribe tu correo"> 
+        <label for="comentario">Comentario</label>
+        <textarea id="comentario" name="comentario" placeholder="Escribe tu comentario"></textarea>
+        <button class="btn-enviar" onclick="enviarFormulario()">Enviar</button>      
+    <div id="mensaje-error" style="color:red; font-weight:bold; margin-top:10px;"></div>
+    </div>
+
+    <script src="../function/contacto.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+
+.contenedor-accesorios{
+    /* border: 2px solid darkblue; */
+    min-height: 100px;
+    display: flex;
+    margin: 0px 100px 32px 100px;
+    text-align: center;
+}
+
+.accesorios{
+    /* border: 2px solid green; */
+    margin:auto;
+    flex:1;
+    width: 100%;
+}
+
+.tienda-online{
+    background-color: aquamarine;
+    margin: 0px 100px 32px 100px;
+    height: 350px;
+    display:flex;
+}
+
+.img-tienda-online{
+    width: 200px;
+    height: 100%;
+    background-color: lightgray; /* Fondo para visualizar el espacio */
+    border: 50px solid #ccc;
+}
+
+.contenedor-img{
+    /* border: 2px solid black; */
+    width: clamp(17.5rem, -6.731rem + 107.692vw, 87.5rem);
+    margin: auto auto 32px auto;
+    max-height: 420px;
+    display: flex;
+}
