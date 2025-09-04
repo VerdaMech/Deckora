@@ -16,9 +16,10 @@
 
 .tienda-online{
     background-color: aquamarine;
-    margin: 0px 100px 32px 100px;
+    margin: auto auto 36px auto;
     height: 350px;
     display:flex;
+    width: clamp(22.5rem, 0rem + 100vw, 87.5rem);
 }
 
 .img-tienda-online{

@@ -1,38 +1,61 @@
-body{
+.contenedor-formulario{
     display: flex;
     flex-direction: column;
-    font-size: clamp(1.625rem, 1.4087rem + 0.9615vw, 2.25rem);
+    margin: auto;
+}
+
+.h3-inicio-sesion{
+    margin: 16px auto 16px 16px;
+}
+.contenedor-inputs-boton{
+    background-color: rgb(185, 143, 157);
+    display: flex;
+    flex-direction: row;
+    width: clamp(17.5rem, -6.731rem + 107.692vw, 87.5rem); 
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 
 .contenedor-inputs{
-    background-color: beige;
-    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
-    width: clamp(17.5rem, -6.731rem + 107.692vw, 87.5rem);
-    min-height: 30vh;
+    align-content: center;
     margin: auto;
+}
+
+.label-inicio-sesion{
+    margin:0px auto 16px 16px;
+}
+
+.input-inicio-sesion{
+    margin: 0px 0px 48px 16px;
+    width: clamp(17.5rem, 9.861rem + 24.444vw, 31.25rem);
+    height: 48px;
+    border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-h1{
-    margin:auto;
-}
-
-label{
-    margin-bottom: 8px;
-}
-
-input{
-    margin-bottom: 16px;
+.contenedor-boton{
+    display: flex;
+    flex-direction: column;
+    margin:auto
 }
 
 .btn-inicio-sesion{
-    width: clamp(2.188rem, -0.841rem + 107.692vw, 10.938rem);
+    width: clamp(9.375rem, 0rem + 100vw, 15.625rem);
     height: clamp(2.188rem, 0.755rem + 91.667vw, 9.063rem);
-    margin: auto auto 24px auto;
+    margin: 16px auto 24px auto;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 28px;
+    background-color:rgb(175, 82, 113),
 }
 
 .input-field.col label{
     color:black;
+}
+
+.contenedor-logo{
+   margin: auto; 
 }
