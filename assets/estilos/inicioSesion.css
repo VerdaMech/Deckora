@@ -14,7 +14,7 @@
     width: clamp(17.5rem, -6.731rem + 107.692vw, 87.5rem); 
     height: 500px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
+    margin-bottom: 60px;
 }
 
 .contenedor-inputs{
