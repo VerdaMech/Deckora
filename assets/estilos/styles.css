@@ -65,6 +65,7 @@ a:hover{
     z-index: 999;
     width: clamp(22.5rem, 0rem + 100vw, 87.5rem);
     margin:auto;
+    border-bottom: 10px solid black;
 }
 
 #navbar {

@@ -8,6 +8,8 @@ function enviarFormulario() {
     // Regex para validar solo ciertos dominios de correo
     let regexCorreo = /^[a-zA-Z0-9._%+-]+@(gmail\.com|hotmail\.com|outlook\.com|yahoo\.com|live\.com)$/i;
     let errores = [];
+
+    let correos = [gmail, duoc, profesorduoc];
     // Validaciones
     if(nombre === ""){
         errores.push("El nombre es obligatorio.");
