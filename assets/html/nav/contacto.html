@@ -1,47 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../estilos/contacto.css" />
+    <link rel="stylesheet" href="../../estilos/styles.css" />
+    <title>Contacto - Deckora</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../estilos/contacto.css">
-  <link rel="stylesheet" href="../../estilos/styles.css">
-  <title>Contacto - Deckora</title>
-</head>
-<body>
-  <section id="header">
-    <a href="#"><img src="../../imagenes/iconos/DeckoraLogo.png" class="logo" alt="DeckoraLogo.png" width="200"></a>
-    <div>
-      <ul id="navbar">
-                <li><a href="../../../index.html"> Home</a></li>
-                <li><a href="../productos/productosPokemon.html"> Pokemon</a></li>
-                <li><a href="../nav/contacto.html"> Contacto</a></li>
-                <li><a class="active" href="../nav/inicioSesion.html"> Inicio de sesión</a></li>
-                <li><a href="../nav/nosotros.html"> Nosotros</a></li>
-      </ul>
-    </div>
-  </section>
-  <div class="contenedor-formulario">
-    <div class="contenedor-logo">
-      <img class="deckora-logo" src="../../imagenes/iconos/DeckoraLogo.png" alt="DeckoraLogo.png">
-    </div>
-    <div class="contenedor-inputs-boton">
-      <div class="contenedor-inputs">
-        <h3 class="h3-contacto">Contacto</h3>
-        <label class="label-contacto" for="nombre">Nombre</label>
-        <input class="input-contacto" id="nombre" type="text" name="nombre" placeholder="Escribe tu nombre">
-        <label class="label-contacto" for="correo">Correo</label>
-        <input class="input-contacto" id="correo" type="text" name="correo" placeholder="Escribe tu correo">
-        <label class="label-contacto" for="comentario">Comentario</label>
-        <textarea class="textarea-contacto" id="comentario" name="comentario" placeholder="Escribe tu comentario"></textarea>
+  <body>
+    <section id="header">
+      <a href="#"
+        ><img
+          src="../../imagenes/iconos/DeckoraLogo.png"
+          class="logo"
+          alt="DeckoraLogo.png"
+          width="200"
+      /></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="../../../index.html"> Home</a></li>
+          <li><a href="../productos/productosPokemon.html"> Pokemon</a></li>
+          <li><a href="../nav/contacto.html"> Contacto</a></li>
+          <li>
+            <a class="active" href="../nav/inicioSesion.html">
+              Inicio de sesión</a
+            >
+          </li>
+          <li><a href="../nav/nosotros.html"> Nosotros</a></li>
+        </ul>
       </div>
-      <div class="contenedor-boton">
-        <button class="btn-contacto" onclick="enviarFormulario()">Enviar</button>
+    </section>
+    <div class="contenedor-formulario">
+      <div class="contenedor-logo">
+        <img
+          class="deckora-logo"
+          src="../../imagenes/iconos/DeckoraLogo.png"
+          alt="DeckoraLogo.png"
+        />
+      </div>
+      <div class="contenedor-inputs-boton">
+        <div class="contenedor-inputs">
+          <h3 class="h3-contacto">Contacto</h3>
+          <label class="label-contacto" for="nombre">Nombre</label>
+          <input
+            class="input-contacto"
+            id="nombre"
+            type="text"
+            name="nombre"
+            placeholder="Escribe tu nombre"
+          />
+          <label class="label-contacto" for="correo">Correo</label>
+          <input
+            class="input-contacto"
+            id="correo"
+            type="text"
+            name="correo"
+            placeholder="Escribe tu correo"
+          />
+          <label class="label-contacto" for="comentario">Comentario</label>
+          <textarea
+            class="textarea-contacto"
+            id="comentario"
+            name="comentario"
+            placeholder="Escribe tu comentario"
+          ></textarea>
+        </div>
+        <div class="contenedor-boton">
+          <button class="btn-contacto" onclick="enviarFormulario()">
+            Enviar
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <footer>Deckora, 2025</footer>
-  <script src="../../function/contacto.js"></script>
-</body>
+    <footer>
+      <div class="contenido-footer">
+        <p>Deckora 2025</p>
+        <a href="assets/html/nav/nosotros.html">¿Quiénes somos?</a>
+        <a href="assets/html/nav/contacto.html">¿Tienes dudas? Contáctanos</a>
+      </div>
+    </footer>
+    <script src="../../function/contacto.js"></script>
+  </body>
 </html>
