@@ -1,0 +1,43 @@
+.contenedor-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center; 
+    min-height: 100vh;     
+    margin: 0;
+    gap: 40px; 
+    padding: 20px;
+}
+
+.contenedor-equipo {
+    background-color: rgb(185, 143, 157);
+    width: clamp(20rem, 80%, 50rem); 
+    min-height: 300px;  
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+
+.contenedor-equipo ul {
+    list-style: none;  
+    padding: 0;        
+    margin: 0;         
+}
+
+.contenedor-equipo ul li {
+    margin: 10px 0;    
+    font-weight: bold; 
+}
+
+footer {
+    background-color: rgb(175, 82, 113);
+    text-align: center;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    margin-top: 40px;
+}

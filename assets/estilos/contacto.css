@@ -1,0 +1,87 @@
+.contenedor-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center; 
+    min-height: 100vh;     
+    margin: 0;
+}
+
+
+.h3-contacto {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.contenedor-inputs-boton {
+    background-color: rgb(185, 143, 157);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: clamp(20rem, 80%, 50rem); 
+    min-height: 650px; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 60px;
+}
+
+.contenedor-inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;  
+    max-width: 600px; 
+}
+
+.label-contacto {
+    margin: 0px 0px 8px 8px;
+    font-weight: bold;
+}
+
+
+.input-contacto, 
+.textarea-contacto {
+    margin: 0px 0px 24px 8px;
+    width: 95%;  
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 10px;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.input-contacto {
+    height: 48px;
+}
+
+.textarea-contacto {
+    height: 160px; 
+    resize: none;
+}
+
+
+.contenedor-boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.btn-contacto {
+    width: 200px;
+    height: 55px;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 20px;
+    background-color: rgb(175, 82, 113);
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-contacto:hover {
+    background-color: rgb(145, 62, 93);
+}

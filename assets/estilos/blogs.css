@@ -1,0 +1,143 @@
+footer {
+    background-color: rgb(175, 82, 113);
+    color: #000000;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.contenedor-blogs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;
+    gap: 40px;
+    background-color: #fff;
+}
+
+.contenedor-blogs h1 {
+    font-size: 2.5rem;
+    color: #000;
+    text-align: center;
+}
+
+.blog-card {
+    background-color: rgb(185, 143, 157);
+    width: clamp(20rem, 80%, 50rem);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #000;
+    gap: 15px;
+    transition: transform 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 8px 20px;
+}
+
+.blog-card img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.blog-card h2 {
+    margin: 10px 0;
+    font-size: 1.6rem;
+}
+
+.blog-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.blog-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgb(175, 82, 113);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.blog-card a:hover {
+    background-color: rgb(145, 62, 93);
+}
+
+.detalle-blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    min-height: 100vh;
+    padding: 40px 20px;
+    gap: 25px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.detalle-blog h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.detalle-blog img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+}
+
+.detalle-blog p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #000;
+    max-width: 600px;
+}
+
+.detalle-blog a {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(175, 82, 113);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.detalle-blog a:hover {
+    background-color: rgb(145, 62, 93);
+}
+
+.texto-blog {
+    background-color: rgb(185, 143, 157); 
+    padding: 20px 25px;
+    border-radius: 15px;
+    box-shadow: rgba(0,0,0,0.2) 0px 4px 10px;
+    max-width: 600px;
+    text-align: left; 
+}
+
+.texto-blog p {
+    margin: 10px 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #000;
+}
+
