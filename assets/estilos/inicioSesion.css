@@ -8,6 +8,10 @@
     margin: 16px auto 16px 16px;
 }
 
+.h3-inicio-sesion.registrar{
+    margin: 32px auto 32px auto;
+}
+
 .contenedor-inputs-boton{
     background-color: rgb(185, 143, 157);
     display: flex;
@@ -16,6 +20,13 @@
     height: 500px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-bottom: 60px;
+}
+
+.contenedor-inputs-boton.registrar {
+    display: flex;
+    flex-direction: column;
+    height: auto; 
+    min-height: 650px; 
 }
 
 .contenedor-inputs{

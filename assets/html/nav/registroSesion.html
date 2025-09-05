@@ -4,55 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="../estilos/inicioSesion.css">
-    <title>Registro de sesion</title>
+    <link rel="stylesheet" href="../../estilos/styles.css">
+    <link rel="stylesheet" href="../../estilos/inicioSesion.css">
+    <title>Inicio de sesión</title>
 </head>
 
 <body>
-    <div class="row contenedor-inputs">
-        <form class="col s12">
-            <div class="row">
-                <div class="input-field col s6">
-                    <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-                    <label for="first_name">First Name</label>
-                </div>
-                <div class="input-field col s6">
-                    <input id="last_name" type="text" class="validate">
-                    <label for="last_name">Last Name</label>
-                </div>
+    <!-- <h1>Deckora</h1> -->
+    <section id="header">
+        <a href="#"><img src="assets/imagenes/iconos/DeckoraLogo.png" class="logo" alt="DeckoraLogo.png" width="200"></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="../../../index.html"> Home</a></li>
+                <li class="dropdown">
+                <a href="#">Productos ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="assets/html/productos/productosPokemon.html">Pokemon</a></li>
+                    <li><a href="assets/html/productos/productosMitos.html">Mitos</a></li>
+                    <li><a href="assets/html/productos/productosMagic.html">Magic</a></li>
+                    <li><a href="assets/html/productos/productosAccesorios.html">Accesorios</a></li>
+                </ul>
+            </li>
+                <li><a href="assets/html/nav/inicioSesion.html"> Inicio de sesión</a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="contenedor-formulario">
+        <div class="contenedor-logo">
+            <img class="deckora-logo" src="../../imagenes/iconos/DeckoraLogo.png" alt="DeckoraLogo.png">
+        </div>
+        <div class="contenedor-inputs-boton registrar">
+            <div class="contenedor-inputs">
+                <h3 class="h3-inicio-sesion registrar">Registrar cuenta</h3>
+                <label class="label-inicio-sesion">Nombre</label>
+                    <input class="input-inicio-sesion" id="nombre" type="text" name="nombre" placeholder="Ingresa tu nombre">
+                <label class="label-inicio-sesion">Apellidos</label>
+                    <input class="input-inicio-sesion" id="apellidos" type="text" name="contraseña" placeholder="Ingresa tus apellidos">
+                <label class="label-inicio-sesion">Correo</label>
+                    <input class="input-inicio-sesion" id="correo" type="email" name="correo" placeholder="Ingresa tu correo">
+                <label class="label-inicio-sesion">Numero de teléfono</label>
+                    <input class="input-inicio-sesion" id="telefono" type="tel" name="numero" placeholder="Ingresa tu número">
+                <label class="label-inicio-sesion">Contraseña</label>
+                    <input class="input-inicio-sesion" id="contrasena" type="password" name="contraseña" placeholder="Escribe tu contraseña">
+                <label class="label-inicio-sesion">Repetir contraseña</label>
+                    <input class="input-inicio-sesion" id="repetir-contrasena" type="password" name="contraseña" placeholder="Repite tu contraseña">
             </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-                    <label for="disabled">Disabled</label>
-                </div>
+            <div class="contenedor-boton">
+                <button class="btn-inicio-sesion" onclick="registrarCuenta()">Crear cuenta</button>
             </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="password" type="password" class="validate">
-                    <label for="password">Password</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="email" type="email" class="validate">
-                    <label for="email">Email</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12">
-                    This is an inline input field:
-                    <div class="input-field inline">
-                        <input id="email_inline" type="email" class="validate">
-                        <label for="email_inline">Email</label>
-                        <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
-                    </div>
-                </div>
-            </div>
-        </form>
+        </div>
     </div>
+    <footer>Deckora, 2025</footer>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="../../function/gestionUsuarios.js"></script>
 
 </html>

@@ -12,14 +12,20 @@
 <body>
     <!-- <h1>Deckora</h1> -->
     <section id="header">
-        <a href="#"><img src="../../imagenes/iconos/DeckoraLogo.png" class="logo" alt="DeckoraLogo.png" width="200"></a>
+        <a href="#"><img src="assets/imagenes/iconos/DeckoraLogo.png" class="logo" alt="DeckoraLogo.png" width="200"></a>
         <div>
             <ul id="navbar">
-                <li><a href="../../../index.html"> Home</a></li>
-                <li><a href="../productos/productos.html"> Productos</a></li>
-                <li><a href="../nav/contacto.html"> Contacto</a></li>
-                <li><a class="active" href="../../nav/inicioSesion.html"> Inicio de sesión</a></li>
-                <li><a href="../nav/nosotros.html"> Nosotros</a></li>
+                <li><a class="active" href="../../../index.html"> Home</a></li>
+                <li class="dropdown">
+                <a href="#">Productos ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="assets/html/productos/productosPokemon.html">Pokemon</a></li>
+                    <li><a href="assets/html/productos/productosMitos.html">Mitos</a></li>
+                    <li><a href="assets/html/productos/productosMagic.html">Magic</a></li>
+                    <li><a href="assets/html/productos/productosAccesorios.html">Accesorios</a></li>
+                </ul>
+            </li>
+                <li><a href="assets/html/nav/inicioSesion.html"> Inicio de sesión</a></li>
             </ul>
         </div>
     </section>
@@ -43,6 +49,6 @@
     </div>
     <footer>Deckora, 2025</footer>
 </body>
-<script src="../../function/inicioSesion.js"></script>
+<script src="../../function/gestionUsuarios.js"></script>
 
 </html>
