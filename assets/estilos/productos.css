@@ -42,9 +42,18 @@ body {
 
 #productos {
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
 }
 
-#productos .contenedor-productos{
+.img-banner {
+
+    width: 100vw;
+}
+
+#productos .contenedor-productos {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
@@ -53,8 +62,8 @@ body {
 }
 
 #productos .pro {
-    width: 15%;
-    min-width: 250px;
+    flex: 1 1 250px;
+    max-width: 250px;
     padding: 15px 17px;
     border: 1px solid gray;
     border-radius: 25px;
@@ -72,6 +81,20 @@ body {
 
 .carta-pokemon {
     width: 100%;
+}
+
+.carta-mitos {
+    width: 100%;
+}
+
+.carta-mtg {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.producto-accesorio {
+    width: 100%;
+    max-height: 250px;
 }
 
 #productos .pro .desc {
@@ -100,7 +123,7 @@ body {
 
 #productos .pro .carrito {
     width: 35px;
-    
+
 }
 
 #productos .pro .carrito-casa {
@@ -113,6 +136,133 @@ body {
     bottom: 20px;
     right: 20px;
     padding: 15px;
+}
 
+.overlay-imagen{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+}
+
+.overlay-texto{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 0 0 4px #000000
+}
+
+
+/* hover */
+
+.overlay-imagen:hover{
+    opacity: 100;
+}
+
+
+.pro:hover{
+filter: grayscale(70%);
+}
+
+/* Pagina de detalles del productos */
+
+#detalle-producto {
+    display: flex;
+    margin-top: 20px;
+    padding: 150px;
+}
+
+#detalle-producto .imagen-producto {
+    width: 30%;
+    margin-right: 50px;
+}
+
+.imagen-pequena-grupo {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagen-pequena-col {
+
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#detalle-producto .detalle-producto-desc {
+
+    width: 50%;
+    margin: 10px solid black;
+    padding-left: 10vw;
+}
+
+#detalle-producto .detalle-producto-desc h6{
+
+    padding: 40px 0 2px 0;
+    font-size: 20px;
+    color: gray;
+}
+
+#detalle-producto .detalle-producto-desc h4{
+    font-size: 40px;
+}
+
+#detalle-producto .detalle-producto-desc h2{
+    font-size: 40px;
+}
+
+#detalle-producto .detalle-producto-desc select{
+
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    height: 36px;
+    font-size: 20px;
+}
+
+#detalle-producto .detalle-producto-desc input{
+
+    width: 83px;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#detalle-producto .detalle-producto-desc input:focus{
+    outline: none;
+}
+
+#detalle-producto .detalle-producto-desc button{
+
+    background: rgb(185, 143, 157);
+    height: 40px;
+    border: none;
+    width: 60%;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#detalle-producto .detalle-producto-desc span{
+
+    font-size: 20px;
 
 }
+
+#imagen-principal{
+    border-radius: 20px;
+}
+
+.imagen-pequena{
+    border-radius: 5px;
+}   

@@ -1,42 +1,43 @@
 function enviarFormulario() {
-    // Obtener valores de los campos
     let nombre = document.getElementById("nombre").value.trim();
     let correo = document.getElementById("correo").value.trim();
     let comentario = document.getElementById("comentario").value.trim();
-    let mensajeError = document.getElementById("mensaje-error");
-    
-    // Regex para validar solo ciertos dominios de correo
-    let regexCorreo = /^[a-zA-Z0-9._%+-]+@(gmail\.com|hotmail\.com|outlook\.com|yahoo\.com|live\.com)$/i;
-    let errores = [];
 
-    let correos = [gmail, duoc, profesorduoc];
-    // Validaciones
     if(nombre === ""){
-        errores.push("El nombre es obligatorio.");
+        console.log("Input nombre vacío");
+        alert("Campo nombre vacío");
+        return;
     } else if(nombre.length > 100){
-        errores.push("El nombre no puede superar los 100 caracteres.");
-    }
-    if(correo === ""){
-        errores.push("El correo es obligatorio.");
-    } else if(correo.length > 100){
-        errores.push("El correo no puede superar los 100 caracteres.");
-    } else if(!regexCorreo.test(correo)){
-        errores.push("Correo no válido. Solo se aceptan: gmail, hotmail, outlook, yahoo o live.");
-    }
-    if(comentario === ""){
-        errores.push("El comentario es obligatorio.");
-    } else if(comentario.length > 500){
-        errores.push("El comentario no puede superar los 500 caracteres.");
-    }
-    // Mostrar errores o enviar formulario
-    if(errores.length > 0){
-        mensajeError.innerHTML = errores.join("<br>");
+        console.log("El nombre no puede tener más de 100 caracteres");
+        alert("No puedes ingresar más de 100 caracteres en el nombre");
         return;
     }
-    mensajeError.innerText = "";
-    alert("Formulario enviado correctamente");
+    if(correo === ""){
+        console.log("Input correo vacío");
+        alert("Campo correo vacío");
+        return;
+    } else if(correo.length > 100){
+        console.log("El texto no puede tener más de 100 caracteres");
+        alert("No puedes ingresar más de 100 caracteres en el correo");
+        return;
+    } else if(!correo.includes("@duoc.cl") && !correo.includes("@profesor.duoc.cl") && !correo.includes("@gmail.com")){
+        alert("El correo solo permite: @duoc.cl / @profesor.duoc.cl / @gmail.com");
+        console.log("Formato de correo incorrecto");
+        return;
+    }
+    if(comentario === ""){
+        console.log("Input comentario vacío");
+        alert("Campo comentario vacío");
+        return;
+    } else if(comentario.length > 500){
+        console.log("El comentario no puede tener más de 500 caracteres");
+        alert("No puedes ingresar más de 500 caracteres en el comentario");
+        return;
+    }
 
-    // Limpiar formulario
+    alert("Formulario enviado correctamente");
+    
+    /* Para dejar el formulario vacio */
     document.getElementById("nombre").value = "";
     document.getElementById("correo").value = "";
     document.getElementById("comentario").value = "";

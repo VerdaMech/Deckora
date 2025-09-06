@@ -12,17 +12,19 @@
 
 <body>
 
+    <!-- NAVBAR -->
+
     <section id="header">
         <a href="#"><img src="../../imagenes/iconos/DeckoraLogo.png" class="logo" alt="DeckoraLogo.png" ></a>
         <div>
             <ul id="navbar">
-                <li><a  href="../../../index.html"> Home</a></li>
+                <li><a href="../../../index.html"> Home</a></li>
                 <li class="dropdown">
                 <a href="#">Productos ▾</a>
                 <ul class="dropdown-menu">
                     <li><a href="../productos/productosPokemon.html">Pokemon</a></li>
                     <li><a href="../productos/productosMitos.html">Mitos</a></li>
-                    <li><a href="#">Magic</a></li>
+                    <li><a href="../productos/productosMagic.html">Magic</a></li>
                     <li><a href="../productos/productosAccesorios.html">Accesorios</a></li>
                 </ul>
             </li>
@@ -32,13 +34,58 @@
         </div>
     </section>
 
-    <section class="banner">
-        <div>
-            <img src="../../imagenes/magic/banner-mtg.png" alt="banner" class="img-banner">
+    <!-- PRODUCTO -->
+
+    <section id="detalle-producto" class="section-p1">
+        <div class="imagen-producto">
+            <img id="imagen-principal">
+
+            <div class="imagen-pequena-grupo">
+
+                <div class="imagen-pequena-col">
+                    <img alt="carta1" width="100%" class="imagen-pequena" id="imagenPequeña1"
+                        onclick="cambiarImagen1()">
+                </div>
+
+                <div class="imagen-pequena-col">
+                    <img alt="carta1" width="100%" class="imagen-pequena" id="imagenPequeña2"
+                        onclick="cambiarImagen2()">
+                </div>
+
+                <div class="imagen-pequena-col">
+                    <img alt="carta1" width="100%" class="imagen-pequena" id="imagenPequeña3"
+                        onclick="cambiarImagen3()">
+                </div>
+
+                <div class="imagen-pequena-col">
+                    <img alt="carta1" width="100%" class="imagen-pequena" id="imagenPequeña4"
+                        onclick="cambiarImagen4()">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="detalle-producto-desc">
+            <h6 id="edicionProducto"></h6>
+            <h4 id="tituloProducto"></h4>
+            <h2 id="valorProducto"></h2>
+            <select>
+                <option>Estado</option>
+                <option>NM</option>
+                <option>EX</option>
+                <option>VG</option>
+                <option>G</option>
+            </select>
+            <input type="number" value="1">
+            <button class="boton">Añadir al carrito</button>
+            <h4>Detalles del producto</h4>
+            <span id="descripcionProducto"></span>
         </div>
     </section>
 
-    <section class="section-p1 text-center" >
+    <!-- PRODUCTOS DESTACADOS -->
+
+    <section class="section-p1 text-center">
         <h2>Cartas magic the gathering</h2>
         <p>Explora cartas de criatura de MTG, desde clásicas como Llanowar Elves hasta poderosos dragones y cartas del
             Universe Beyond, organizadas por poder y rareza.
@@ -49,15 +96,17 @@
         <div class="contenedor-productos">
         </div>
     </section>
-            <footer>
+
+
+    <footer>
         <div class="contenido-footer">
             <p>Deckora 2025</p>
             <a href="../nav/nosotros.html">¿Quiénes somos?</a>
             <a href="../nav/contacto.html">¿Tienes dudas? Contáctanos</a>
         </div>
     </footer>
-
 </body>
-    <script src="../../function/productosM.js"></script>
     <script src="../../function/arrayProductos.js"></script>
+    <script src="../../function/productosM.js"></script>
+    <script src="../../function/productoM.js"></script>
 </html>
