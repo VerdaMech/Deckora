@@ -138,7 +138,7 @@ body {
     padding: 15px;
 }
 
-.overlay-imagen{
+.overlay-imagen {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -152,26 +152,26 @@ body {
     border-radius: 25px;
 }
 
-.overlay-texto{
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-shadow: 0 0 4px #000000
+.overlay-texto {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0 0 4px #000000
 }
 
 
 /* hover */
 
-.overlay-imagen:hover{
+.overlay-imagen:hover {
     opacity: 100;
 }
 
 
-.pro:hover{
-filter: grayscale(70%);
+.pro:hover {
+    filter: grayscale(70%);
 }
 
 /* Pagina de detalles del productos */
@@ -206,22 +206,22 @@ filter: grayscale(70%);
     padding-left: 10vw;
 }
 
-#detalle-producto .detalle-producto-desc h6{
+#detalle-producto .detalle-producto-desc h6 {
 
     padding: 40px 0 2px 0;
     font-size: 20px;
     color: gray;
 }
 
-#detalle-producto .detalle-producto-desc h4{
+#detalle-producto .detalle-producto-desc h4 {
     font-size: 40px;
 }
 
-#detalle-producto .detalle-producto-desc h2{
+#detalle-producto .detalle-producto-desc h2 {
     font-size: 40px;
 }
 
-#detalle-producto .detalle-producto-desc select{
+#detalle-producto .detalle-producto-desc select {
 
     display: block;
     padding: 5px 10px;
@@ -230,7 +230,7 @@ filter: grayscale(70%);
     font-size: 20px;
 }
 
-#detalle-producto .detalle-producto-desc input{
+#detalle-producto .detalle-producto-desc input {
 
     width: 83px;
     height: 35px;
@@ -239,11 +239,11 @@ filter: grayscale(70%);
     margin-right: 10px;
 }
 
-#detalle-producto .detalle-producto-desc input:focus{
+#detalle-producto .detalle-producto-desc input:focus {
     outline: none;
 }
 
-#detalle-producto .detalle-producto-desc button{
+#detalle-producto .detalle-producto-desc button {
 
     background: rgb(185, 143, 157);
     height: 40px;
@@ -253,16 +253,16 @@ filter: grayscale(70%);
     font-size: 20px;
 }
 
-#detalle-producto .detalle-producto-desc span{
+#detalle-producto .detalle-producto-desc span {
 
     font-size: 20px;
 
 }
 
-#imagen-principal{
+#imagen-principal {
     border-radius: 20px;
 }
 
-.imagen-pequena{
+.imagen-pequena {
     border-radius: 5px;
-}   
+}

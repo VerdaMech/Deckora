@@ -1,5 +1,4 @@
-
-.contenedor-accesorios{
+.contenedor-accesorios {
     /* border: 2px solid darkblue; */
     min-height: 100px;
     display: flex;
@@ -7,29 +6,30 @@
     text-align: center;
 }
 
-.accesorios{
+.accesorios {
     /* border: 2px solid green; */
-    margin:auto;
-    flex:1;
+    margin: auto;
+    flex: 1;
     width: 100%;
 }
 
-.tienda-online{
+.tienda-online {
     background-color: aquamarine;
     margin: auto auto 36px auto;
     height: 350px;
-    display:flex;
+    display: flex;
     width: clamp(22.5rem, 0rem + 100vw, 87.5rem);
 }
 
-.img-tienda-online{
+.img-tienda-online {
     width: 200px;
     height: 100%;
-    background-color: lightgray; /* Fondo para visualizar el espacio */
+    background-color: lightgray;
+    /* Fondo para visualizar el espacio */
     border: 50px solid #ccc;
 }
 
-.contenedor-img{
+.contenedor-img {
     /* border: 2px solid black; */
     width: clamp(17.5rem, -6.731rem + 107.692vw, 87.5rem);
     margin: auto auto 32px auto;
