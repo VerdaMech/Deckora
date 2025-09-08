@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deckora productos</title>
+    <link rel="stylesheet" href="../../estilos/carrito.css">
+    <link rel="stylesheet" href="../../estilos/styles.css">
+    <link rel="stylesheet" href="../../estilos/productos.css">
+    <link rel="icon" href="../assets/imagenes/logo.ico">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <section id="header">
+        <a href="#"><img src="../../imagenes/iconos/DeckoraLogo.webp" class="logo" alt="DeckoraLogo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="../../../index.html"> Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Productos ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../productos/productosPokemon.html">Pokemon</a></li>
+                        <li><a href="productosMitos.html">Mitos</a></li>
+                        <li><a href="productosMagic.html">Magic</a></li>
+                        <li><a href="../productos/productosAccesorios.html">Accesorios</a></li>
+                    </ul>
+                </li>
+                <li><a href="../nav/inicioSesion.html"> Inicio de sesión</a></li>
+                <li class="listaCarrito"><p>0</p><a href="../../html/productos/carrito.html"> <img src="../../imagenes/iconos/carrito.ico" alt="carrito" width="40"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Carrito -->
+    <section id="carro" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Elminar</td>
+                    <td>Imagen</td>
+                    <td>Producto</td>
+                    <td>Precio</td>
+                    <td>Cantidad</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- ESTO ES 1 PRODUCTO -->
+                <tr>
+                    <td><a href="#"><i><img src="../../imagenes/iconos/carrito.ico" alt="carrito" class="eliminar-carrito-img"></i></a>
+                    </td>
+                    <td><img src="../../imagenes/pokemon/p10.webp" alt="hola"></td>
+                    <td id="nombreCarta">Carta pokemon</td>
+                    <td id="precioCarta">$10000</td>
+                    <td><input type="number" value="1"></td>
+                    <td id="subTotal">$10000</td>
+                </tr>
+                <!-- ESTO ES 1 PRODUCTO -->
+                <tr>
+                    <td><a href="#"><i><img src="../../imagenes/iconos/carrito.ico" alt="carrito" class="eliminar-carrito-img"></i></a>
+                    </td>
+                    <td><img src="../../imagenes/pokemon/p10.webp" alt="hola"></td>
+                    <td>Carta pokemon</td>
+                    <td>$10000</td>
+                    <td id="cantidad"><input type="number" value="1"></td>
+                    <td>$10000</td>
+                </tr>
+                <!-- ESTO ES 1 PRODUCTO -->
+                <tr>
+                    <td><a href="#"><i><img src="../../imagenes/iconos/carrito.ico" alt="carrito" class="eliminar-carrito-img"></i></a>
+                    </td>
+                    <td><img src="../../imagenes/pokemon/p10.webp" alt="hola"></td>
+                    <td>Carta pokemon</td>
+                    <td>$10000</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$10000</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </section>
+
+    <!-- Cupon y total -->
+     <section id="anadir-carrito" class="section-p1">
+        <div id="cupon">
+            <h3>Aplicar cupon</h3>
+            <div>
+                <input type="text" placeholder="Ingresa tu cupon">
+                <button >Aplicar</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Total de compra</h3>
+            <table>
+                <tr>
+                    <td>Sub total</td>
+                    <td>$400</td>
+                </tr>
+                <tr>
+                    <td>Envio</td>
+                    <td>Gratis</td>
+                </tr>
+                <tr>
+                    <td><strong>TOTAL</strong></td>
+                    <td><strong>$0000</strong></td>
+                </tr>
+            </table>
+            <button>Proceder al pago</button>
+        </div>
+
+     </section>
+
+
+    <p id="parrafo">HOLA</p>
+
+    <!-- footer -->
+    <footer>
+        <div class="contenido-footer">
+            <div class="empresa">
+                <p>Deckora 2025</p>
+            </div>
+            <div class="footer-links">
+                <a href="../nav/nosotros.html">¿Quiénes somos?</a>
+                <a href="../nav/contacto.html">¿Tienes dudas? Contáctanos</a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../../function/arrayProductos.js"></script>
+<script src="../../function/carrito.js"></script>
+
+</html>

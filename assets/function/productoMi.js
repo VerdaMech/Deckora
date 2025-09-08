@@ -9,8 +9,8 @@ function renderProducto() {
     if (productoEncontrado) {
         document.getElementById("edicionProducto").innerText = productoEncontrado.edicion;
         document.getElementById("tituloProducto").innerText = productoEncontrado.nombre;
-        document.getElementById("imagen-principal").src = productoEncontrado.url;
-        document.getElementById("valorProducto").innerText = productoEncontrado.precio;
+        document.getElementById("imagen-principal-Mi").src = productoEncontrado.url;
+        document.getElementById("valorProducto").innerText = "$" + productoEncontrado.precio;
         document.getElementById("descripcionProducto").innerText = productoEncontrado.descripcion;
         document.getElementById("imagenPequeña1").src = productoEncontrado.imgP1;
         document.getElementById("imagenPequeña2").src = productoEncontrado.imgP2;
@@ -24,27 +24,27 @@ function renderProducto() {
 
 function cambiarImagen1() {
 
-    var ImgPrin = document.getElementById("imagen-principal");
+    var ImgPrin = document.getElementById("imagen-principal-Mi");
     var ImgPeq1 = document.getElementById("imagenPequeña1");
         ImgPrin.src = ImgPeq1.src;
 }
 
 function cambiarImagen2() {
 
-    var ImgPrin = document.getElementById("imagen-principal");
+    var ImgPrin = document.getElementById("imagen-principal-Mi");
     var ImgPeq2 = document.getElementById("imagenPequeña2");
         ImgPrin.src = ImgPeq2.src;
 }
 
 function cambiarImagen3() {
-    var ImgPrin = document.getElementById("imagen-principal");
+    var ImgPrin = document.getElementById("imagen-principal-Mi");
     var ImgPeq3 = document.getElementById("imagenPequeña3");
         ImgPrin.src = ImgPeq3.src;
 }
 
 function cambiarImagen4() {
 
-    var ImgPrin = document.getElementById("imagen-principal");
+    var ImgPrin = document.getElementById("imagen-principal-Mi");
     var ImgPeq4 = document.getElementById("imagenPequeña4");
         ImgPrin.src = ImgPeq4.src;
 }

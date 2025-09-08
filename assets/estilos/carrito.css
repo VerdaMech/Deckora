@@ -1,0 +1,128 @@
+/* Productos */
+
+#carro table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#carro table img {
+    padding: 10%;
+    width: 35%;
+}
+
+#carro table td:nth-child(1),
+#carro table td:nth-child(2),
+#carro table td:nth-child(4),
+#carro table td:nth-child(5),
+#carro table td:nth-child(6) {
+    width: 8%;
+    text-align: center;
+}
+
+#carro table td:nth-child(3) {
+    width: 25%;
+    text-align: center;
+}
+
+#carro table td:nth-child(5) input {
+    width: 20%;
+    padding: 10px;
+}
+
+#carro table thead {
+    border: 1px solid rgb(191, 69, 107);
+    border-right: none;
+    border-left: none;
+}
+
+#carro table thead td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 25px;
+}
+
+#carro table tbody tr td {
+    padding-top: 17px;
+}
+
+#carro table tbody td {
+    font-size: 15px;
+}
+
+#carro table tbody .eliminar-carrito-img {
+    width: 10%;
+}
+
+/* cupon */
+
+#anadir-carrito {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+#cupon {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+#cupon h3,
+#subtotal  {
+    padding-bottom: 10px;
+}
+
+#cupon input {
+    padding: 10px 20px;
+    width: 30%;
+    margin-right: 10px;
+    border: 1px solid rgb(191, 69, 107);
+    outline: none;
+}
+
+#cupon button {
+    background-color: rgb(185, 143, 157);
+    border: none;
+    padding: 10px;
+    width: 80px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+/* total */
+
+
+#subtotal {
+    width: 40%;
+    margin-bottom: 30px;
+    border: 1px solid rgb(191, 69, 107);
+    padding: 50px;
+}
+
+#subtotal table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subtotal table td {
+    width: 50%;
+    border: 1px solid rgb(191, 69, 107);
+    padding: 10px;
+    font-size: 15px;
+
+}
+
+#subtotal button {
+    background-color: rgb(185, 143, 157);
+    border: none;
+    padding: 10px;
+    width: 40%;
+    font-size: 18px;
+    border-radius: 5px;
+    
+}

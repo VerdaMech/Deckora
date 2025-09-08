@@ -1,38 +1,76 @@
-.contenedor-accesorios {
-    /* border: 2px solid darkblue; */
-    min-height: 100px;
-    display: flex;
-    margin: 0px 100px 32px 100px;
-    text-align: center;
-}
-
-.accesorios {
-    /* border: 2px solid green; */
-    margin: auto;
-    flex: 1;
-    width: 100%;
-}
 
 .tienda-online {
-    background-color: aquamarine;
-    margin: auto auto 36px auto;
+    /* background-color: aquamarine; */
+    margin: 36px auto 36px auto;
     height: 350px;
     display: flex;
-    width: clamp(22.5rem, 0rem + 100vw, 87.5rem);
+    flex-direction: row;
+    width: clamp(17.5rem, -6.731rem + 107.692vw, 87.5rem); 
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
-.img-tienda-online {
-    width: 200px;
-    height: 100%;
-    background-color: lightgray;
-    /* Fondo para visualizar el espacio */
-    border: 50px solid #ccc;
+.texto-home{
+    max-width: 70%;
+    min-width: 30%;
+    margin-left: 10px;
+    align-content:  center;
 }
 
-.contenedor-img {
-    /* border: 2px solid black; */
-    width: clamp(17.5rem, -6.731rem + 107.692vw, 87.5rem);
-    margin: auto auto 32px auto;
-    max-height: 420px;
+.texto-home p{
+    color: black;
+}
+
+.contenedor-carrusel {
     display: flex;
+    justify-content: center;  /* Centra horizontal */
+    align-items: center;      /* Centra vertical */
+    padding: 32px;
+}
+
+.img-carrusel {
+    position: relative;
+    max-width: clamp(17.5rem, -6.731rem + 107.692vw, 87.5rem);
+    margin: auto; /* asegúrate de que quede centrado */
+}
+
+.carrusel {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 12px;
+    max-width: clamp(17.5rem, -6.731rem + 107.692vw, 87.5rem);
+    margin: auto;
+}
+
+.carrusel img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    width: 100%;
+    height: auto;        
+    object-fit: contain; 
+}
+
+.nav-carrusel {
+    display: flex;
+    column-gap: 16px;
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.nav-carrusel a {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: red;
+    opacity: 0.6;
+    transition: opacity 250ms ease;
+}
+
+.nav-carrusel a:hover {
+    opacity: 1;
 }

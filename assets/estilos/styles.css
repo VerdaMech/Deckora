@@ -100,6 +100,11 @@ a:hover {
 }
 
 
+.text-center{
+    text-align: center;
+}
+
+
 .section-m1 {
     padding: 40px 0;
 }
@@ -154,4 +159,13 @@ a:hover {
     position: absolute;
     bottom: -4px;
     left: 20px;
+}
+
+#header div li img{
+    width: 40px;
+    height: auto;
+}
+
+#header div li p{
+    color: black;
 }

@@ -7,17 +7,17 @@ document.addEventListener('DOMContentLoaded', function() {
 function renderProductos() {
     let html = '';
     productosP.forEach(productoP => {
-        html += `
-            <div class="pro" onclick="clickProductos(${productoP.id})">
-                <img src="${productoP.url}" alt="${productoP.nombre}" class="carta-pokemon"}>
+        html +=`
+            <div class="pro" >
                 <div class="desc">
+                    <img src="${productoP.url}" alt="${productoP.nombre}" class="carta-mtg"} onclick="clickProductos(${productoP.id})">
                     <span>${productoP.edicion}</span>
                     <h5>${productoP.nombre}</h5>
-                    <h4>$${productoP.precio}</h4>
-                </div>
-                <div class="carrito-casa">
-                    <a href="#"><img src="../../imagenes/iconos/carrito.ico" alt="anadir-carrito" class="carrito"></a>
-                </div>
+                    <p class= "precio" >$<span class= "precio">${productoP.precio}</span></p>
+                    <div class="carrito-casa anadir-carrito">
+                        <a href="#"><img src="../../imagenes/iconos/carrito.ico" alt="anadir-carrito" class="carrito"></a>
+                    </div>
+                </div>  
             </div>
         `;
     });

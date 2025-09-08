@@ -15,7 +15,7 @@
     <!-- NAVBAR -->
 
     <section id="header">
-        <a href="#"><img src="../../imagenes/iconos/DeckoraLogo.png" class="logo" alt="DeckoraLogo.png"></a>
+        <a href="#"><img src="../../imagenes/iconos/DeckoraLogo.webp" class="logo" alt="DeckoraLogo"></a>
         <div>
             <ul id="navbar">
                 <li><a href="../../../index.html"> Home</a></li>
@@ -23,13 +23,13 @@
                     <a href="#">Productos ▾</a>
                     <ul class="dropdown-menu">
                         <li><a href="../productos/productosPokemon.html">Pokemon</a></li>
-                        <li><a href="../productos/productosMitos.html">Mitos</a></li>
-                        <li><a href="../productos/productosMagic.html">Magic</a></li>
+                        <li><a href="productosMitos.html">Mitos</a></li>
+                        <li><a href="productosMagic.html">Magic</a></li>
                         <li><a href="../productos/productosAccesorios.html">Accesorios</a></li>
                     </ul>
                 </li>
                 <li><a href="../nav/inicioSesion.html"> Inicio de sesión</a></li>
-                <li><a href="#"> <img src="../../imagenes/iconos/carrito.ico" alt="carrito" width="40"></a></li>
+                <li class="listaCarrito"><p>0</p><a href="../../html/productos/carrito.html"> <img src="../../imagenes/iconos/carrito.ico" alt="carrito"></a></li>
             </ul>
         </div>
     </section>
@@ -38,27 +38,27 @@
 
     <section id="detalle-producto" class="section-p1">
         <div class="imagen-producto">
-            <img id="imagen-principal">
+            <img id="imagen-principal-Mi">
 
             <div class="imagen-pequena-grupo">
 
                 <div class="imagen-pequena-col">
-                    <img alt="carta1" width="100%" class="imagen-pequena" id="imagenPequeña1"
+                    <img alt="carta1" class="imagen-pequena" id="imagenPequeña1"
                         onclick="cambiarImagen1()">
                 </div>
 
                 <div class="imagen-pequena-col">
-                    <img alt="carta1" width="100%" class="imagen-pequena" id="imagenPequeña2"
+                    <img alt="carta1" class="imagen-pequena" id="imagenPequeña2"
                         onclick="cambiarImagen2()">
                 </div>
 
                 <div class="imagen-pequena-col">
-                    <img alt="carta1" width="100%" class="imagen-pequena" id="imagenPequeña3"
+                    <img alt="carta1" class="imagen-pequena" id="imagenPequeña3"
                         onclick="cambiarImagen3()">
                 </div>
 
                 <div class="imagen-pequena-col">
-                    <img alt="carta1" width="100%" class="imagen-pequena" id="imagenPequeña4"
+                    <img alt="carta1" class="imagen-pequena" id="imagenPequeña4"
                         onclick="cambiarImagen4()">
                 </div>
 
@@ -115,5 +115,6 @@
 <script src="../../function/arrayProductos.js"></script>
 <script src="../../function/productosMi.js"></script>
 <script src="../../function/productoMi.js"></script>
+<script src="../../function/carrito.js"></script>
 
 </html>

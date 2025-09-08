@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="assets/estilos/home.css">
     <link rel="stylesheet" href="assets/estilos/productos.css">
     <title>Deckora</title>
-    <link rel="icon" href="imagenes/logo.ico" alt="logo.ico">
+    <link rel="icon" href="assets/imagenes/logo.ico" alt="logo">
 </head>
 
 <body>
     <section id="header">
-        <a href="#"><img src="assets/imagenes/iconos/DeckoraLogo.png" class="logo" alt="DeckoraLogo.png"></a>
+        <a href="#"><img src="assets/imagenes/iconos/DeckoraLogo.webp" class="logo" alt="DeckoraLogo"></a>
         <div>
             <ul id="navbar">
-                <li><a class="active" href="../../../index.html"> Home</a></li>
+                <li><a href="#" class="active"> Home</a></li>
                 <li class="dropdown">
                     <a href="#">Productos ▾</a>
                     <ul class="dropdown-menu">
@@ -27,48 +27,42 @@
                     </ul>
                 </li>
                 <li><a href="assets/html/nav/inicioSesion.html"> Inicio de sesión</a></li>
+                <li class="listaCarrito"><p>0</p><a href="assets/html/productos/carrito.html"> <img src="assets/imagenes/iconos/carrito.ico" alt="carrito"></a></li>
             </ul>
         </div>
     </section>
-    <h1 class="text-center">Deckora</h1>
-    <div class="tienda-online">
-        <div>
-            <h2>Tienda Online</h2>
-            <button>ver productos</button>
+    <section class="contenedor-carrusel">
+        <div class="img-carrusel">
+            <div class="carrusel">
+                <img id="img-1" src="assets/imagenes/pokemon/banner-pokemon.webp" alt="banner-pokemon">
+                <img id="img-2" src="assets/imagenes/magic/banner-mtg.webp" alt="banner-magic">
+                <img id="img-3" src="assets/imagenes/mitos/banner-mitos.webp" alt="banner-mitos">
+                <img id="img-4" src="assets/imagenes/accesorios/banner-accesorios.webp" alt="banner-accesorios">
+            </div>
+            <div class="nav-carrusel">
+                <a href="#img-1"></a>
+                <a href="#img-2"></a>
+                <a href="#img-3"></a>
+                <a href="#img-4"></a>
+            </div>
         </div>
-        <img class="img-tienda-online">
-    </div>
-    <div class="contenedor-img">
-        <!-- <h2>Cartas Magic</h2> -->
-        <img src="assets/imagenes/magic/alpharael.png" alt="alpharaeal.png">
-        <img src="assets/imagenes/magic/cosmogrand.png" alt="cosmogrand.png">
-        <img src="assets/imagenes/magic/exalted.png" alt="exalted.png">
-        <img src="assets/imagenes/magic/icetil.png" alt="icetil.png">
-    </div>
-    <div class="contenedor-img">
-        <!-- <h2>Cartas Magic</h2> -->
-        <img src="assets/imagenes/magic/alpharael.png" alt="alpharaeal.png">
-        <img src="assets/imagenes/magic/cosmogrand.png" alt="cosmogrand.png">
-        <img src="assets/imagenes/magic/exalted.png" alt="exalted.png">
-        <img src="assets/imagenes/magic/icetil.png" alt="icetil.png">
-    </div>
-    <div class="contenedor-img">
-        <!-- <h2>Cartas Pokemon</h2> -->
-        <img src="assets/imagenes/pokemon/bulbasaur.png" alt="bulbasaur.png">
-        <img src="assets/imagenes/pokemon/ivisaur.png" alt="ivisaur.png">
-        <img src="assets/imagenes/pokemon/venusaur.png" alt="venusaur.png">
-        <img src="assets/imagenes/pokemon/charmander.png" alt="charmander.png">
-    </div>
-    <div class="contenedor-accesorios">
-        <div class="accesorios">
-            <!-- <h3>accesorio 1</h3> -->
-            <img src="assets/imagenes/pokemon/setCartas.png" alt="setCartas.png">
+    </section>
+    <div class="tienda-online">  
+        <div class="texto-home">
+            <h1>Deckora</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis itaque quos doloribus, fuga ipsa enim
+                animi debitis tempora nesciunt voluptate voluptas quidem amet! Iure eos voluptas, repellendus tenetur
+                amet eum!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis unde blanditiis porro quod voluptates
+                provident cumque itaque, ex aspernatur quibusdam accusamus, soluta atque, quaerat illum corporis animi
+                sequi fugit. Atque!</p>
         </div>
-        <div class="accesorios">
-            <!-- <h3>accesorio 1</h3> -->
-            <img src="assets/imagenes/magic/spidermanCartas.png" alt="spidermanCartas.png">
-        </div>
+        <img class="logo-home" src="assets/imagenes/iconos/DeckoraLogo.webp">
     </div>
+    <section id="productos" class="section-p1">
+        <div class="contenedor-productos">
+        </div>
+    </section>
     <footer>
         <div class="contenido-footer">
             <div class="empresa">
@@ -81,5 +75,7 @@
         </div>
     </footer>
 </body>
-
+<script src="assets/function/arrayProductos.js"></script>
+<script src="assets/function/function.js"></script>
+<script src="assets/function/carrito.js"></script>
 </html>

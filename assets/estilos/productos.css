@@ -115,7 +115,7 @@ body {
     font-size: 20px;
 }
 
-#productos .pro .desc h4 {
+#productos .pro .desc .precio {
     font-size: 25px;
     font-weight: 700;
     color: rgb(191, 69, 107);
@@ -131,7 +131,7 @@ body {
     width: 35px;
     height: 35px;
     border-radius: 50px;
-
+    z-index: 999;
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -176,15 +176,27 @@ body {
 
 /* Pagina de detalles del productos */
 
+#imagen-principal-Mi, #imagen-principal-M, #imagen-principal-Ac{
+    height: 69%;
+    border-radius: 5px;
+}
+
+#imagen-principal-P{
+    height: 65%;
+}
+
+
+
 #detalle-producto {
     display: flex;
     margin-top: 20px;
-    padding: 150px;
+    padding: 150px 150px 0 150px;
 }
 
 #detalle-producto .imagen-producto {
     width: 30%;
-    margin-right: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .imagen-pequena-grupo {
@@ -259,10 +271,20 @@ body {
 
 }
 
-#imagen-principal {
-    border-radius: 20px;
-}
-
 .imagen-pequena {
     border-radius: 5px;
+    width :100%;
+    
+}
+
+/* Carrito, copiar despues en styles cuadno juntemos todo (es para el carrito) */
+
+#navbar li p{
+    position: absolute;
+    top: -27px;
+    left: 0px;
+    font-size: 15px;
+    background-color: rgb(191, 69, 107);
+    padding: 8px 11px;
+    border-radius: 50px;
 }
